@@ -1,14 +1,24 @@
 <html>
     <head>
-
+        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" href="static/order.css">
     </head>
     <body>
-        <h1>Your Individual Order</h1>
+        <header>
+            <img src="static/images/logo.jpeg" alt="store logo">
+            <h1>The Thumb Store</h1>
+        </header>
+
+        
+        <h2>Your Individual Order</h2>
         <div>
             <p>
                 Hi {{orders.customer_name}}! You ordered {{orders.book.title}} on {{orders.order_date}}. The total cost is £{{orders.pence_to_pounds()}}.
                
             </p>
+
+            <img src="images/book.png" alt="store logo">
+
         </div>
     </body>
 </html>

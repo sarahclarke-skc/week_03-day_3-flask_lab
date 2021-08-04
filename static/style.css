@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+header > img {
+    width: 100px;
+    height: auto;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+h1 {
+    padding-left: 450px;
+}

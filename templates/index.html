@@ -1,9 +1,14 @@
 <html>
     <head>
-
+        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" href="static/index.css">
     </head>
     <body>
-        <h1>Your Order List</h1>
+        <header>
+            <img src="static/images/logo.jpeg" alt="store logo">
+            <h1>The Thumb Store</h1>
+        </header>
+        <h2>Your Order List</h2>
         {% for order in orders %}
         <div>
             <p>
