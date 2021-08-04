@@ -1,0 +1,14 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Your Order List</h1>
+        {% for order in orders %}
+        <div>
+            <p>
+                {{orders.customer_name}}: You ordered {{orders.book}} on {{orders.order_date}}. The total cost is {{order.pence_to_pound()}} 
+            </p>
+        </div>
+    </body>
+</html>

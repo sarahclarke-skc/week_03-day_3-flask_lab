@@ -5,4 +5,5 @@ class Order:
         self.book = book
         self.total_cost = total_cost
 
-        
+    def pence_to_pounds(self):
+        return self.total_cost / 100
