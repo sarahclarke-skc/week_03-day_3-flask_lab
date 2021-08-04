@@ -7,8 +7,9 @@
         {% for order in orders %}
         <div>
             <p>
-                Hi {{order.customer_name}}! You ordered {{order.book.title}} on {{order.order_date}}. The total cost is £{{order.pence_to_pounds()}}. 
+                Hi, {{order.customer_name}}! You ordered {{order.book.title}} on {{order.order_date}}. The total cost is £{{order.pence_to_pounds()}}. 
             </p>
+            <a href="http://127.0.0.1:5000/orders/{{orders.index(order)}}">View Orders</a>
         </div>
         {% endfor %}
     </body>
