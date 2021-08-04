@@ -7,7 +7,7 @@
         {% for order in orders %}
         <div>
             <p>
-                Hi {{order.customer_name}}! You ordered {{orders.book}} on {{order.order_date}}. The total cost is £{{order.pence_to_pounds()}}. 
+                Hi {{order.customer_name}}! You ordered {{order.book.title}} on {{order.order_date}}. The total cost is £{{order.pence_to_pounds()}}. 
             </p>
         </div>
         {% endfor %}

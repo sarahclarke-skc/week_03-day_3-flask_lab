@@ -6,7 +6,8 @@
         <h1>Your Individual Order</h1>
         <div>
             <p>
-                guykufluvgli{{orders}}
+                Hi {{orders.customer_name}}! You ordered {{orders.book.title}} on {{orders.order_date}}. The total cost is £{{orders.pence_to_pounds()}}.
+               
             </p>
         </div>
     </body>
