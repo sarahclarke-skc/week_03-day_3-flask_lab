@@ -1,21 +1,52 @@
 <html>
     <head>
+        <title>The Thumb Store</title>
         <link rel="stylesheet" href="static/style.css">
         <link rel="stylesheet" href="static/index.css">
     </head>
-    <body>
-        <header>
-            <img src="static/images/logo.jpeg" alt="store logo">
-            <h1>The Thumb Store</h1>
-        </header>
+<body>
+    <header>
+        <img src="static/images/logo.jpeg" alt="store logo">
+        <h1>The Thumb Store</h1>
+
+        <nav>
+            <ul class='main-nav'>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        
         <h2>Your Order List</h2>
         {% for order in orders %}
         <div>
             <p>
                 Hi, {{order.customer_name}}! You ordered {{order.book.title}} on {{order.order_date}}. The total cost is £{{order.pence_to_pounds()}}. 
             </p>
-            <a href="http://127.0.0.1:5000/orders/{{orders.index(order)}}">View Orders</a>
+                <a href="http://127.0.0.1:5000/orders/{{orders.index(order)}}">View Orders</a>
         </div>
-        {% endfor %}
+            {% endfor %}
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy</a></li>
+
+                <li><a href="conditions.html">Conditions of Use</a></li>
+
+                <li><a href="cookies.html">Cookies Notice</a></li>
+            </ul>
+
+            <p>© The Thumb Store 2021</p>
+        </nav>
+    </footer>
+
+
     </body>
 </html>

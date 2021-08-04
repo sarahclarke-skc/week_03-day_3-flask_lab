@@ -1,7 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: normal;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 50px;
+    color: whitesmoke;
+    justify-content: space-between;
+}
+
+.main-nav a {
+    color: whitesmoke;
+    margin: 10px;
+}
+
+
 header {
     display: flex;
     flex-direction: row;
-    background-color: aqua;
+    background-color: black;
 }
 
 header > img {
@@ -12,5 +32,22 @@ header > img {
 }
 
 h1 {
-    padding-left: 450px;
+    align-content: center;
+    margin: 50px;
+    color: whitesmoke
+}
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    justify-content: center;
+    color: whitesmoke;
+}
+
+footer nav a {
+    list-style: none;
+    color: white;
+    margin: 10px;
 }

@@ -1,5 +1,6 @@
 <html>
     <head>
+        <title>The Thumb Store</title>
         <link rel="stylesheet" href="static/style.css">
         <link rel="stylesheet" href="static/order.css">
     </head>
@@ -7,18 +8,38 @@
         <header>
             <img src="static/images/logo.jpeg" alt="store logo">
             <h1>The Thumb Store</h1>
+
+            <nav>
+                <ul class='main-nav'>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
         </header>
 
         
         <h2>Your Individual Order</h2>
         <div>
             <p>
-                Hi {{orders.customer_name}}! You ordered {{orders.book.title}} on {{orders.order_date}}. The total cost is £{{orders.pence_to_pounds()}}.
+                Hi, {{orders.customer_name}}! You ordered {{orders.book.title}} on {{orders.order_date}}. The total cost is £{{orders.pence_to_pounds()}}.
                
             </p>
-
-            <img src="images/book.png" alt="store logo">
-
         </div>
     </body>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy</a></li>
+
+                <li><a href="conditions.html">Conditions of Use</a></li>
+
+                <li><a href="cookies.html">Cookies Notice</a></li>
+            </ul>
+
+            <p>© The Thumb Store 2021</p>
+        </nav>
+    </footer>
 </html>
