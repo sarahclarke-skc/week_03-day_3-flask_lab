@@ -6,4 +6,5 @@ class Order:
         self.total_cost = total_cost
 
     def pence_to_pounds(self):
-        return self.total_cost / 100
+        corrected_format = self.total_cost / 100
+        return f"{corrected_format:.2f}"
